@@ -40,6 +40,14 @@ const Nav = () => {
               >
                 About
               </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  `nav-item nav-link ${isActive ? "active" : ""}`
+                }
+                to="/dashboard"
+              >
+                Dashboard
+              </NavLink>
             </div>
           </div>
         </div>
